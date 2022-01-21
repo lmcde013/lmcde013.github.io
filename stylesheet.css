@@ -1,0 +1,38 @@
+body {
+	background-color: indigo;
+}
+
+h1 {
+	color:gainsboro;
+	font-family:verdana;
+	font-size:300%;
+	text-align:center;
+}
+
+h2 {
+	color:mistyrose;
+	font-family:verdana;
+	font-size:200%;
+	text-align:center;
+}
+
+p {
+	color:mistyrose;
+	font-family:verdana;
+	font-size:140%;
+	text-align:center;
+}
+
+.radio-button label {
+	font-family: verdana;
+	font-size: 24px;
+	color:mistyrose;
+	left: +100px;
+}
+
+.checkbox-example {
+	font-family: verdana;
+	font-size: 24px;
+	color:mistyrose;
+	left: +100px;
+}
