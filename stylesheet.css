@@ -24,8 +24,8 @@ textarea {
 	padding: 50px;
 }
 
-.radio-button {
-	position: relative;
+input[type="radio"], input[type="checkbox"} {
+	position: absolute;
 }
 
 .radio-button label {
@@ -36,11 +36,12 @@ textarea {
 	padding: 50px;
 }
 
-.checkbox-example {
-	position: relative;
+.checkbox-label::before, .check-example label::after {
+	content: '';
+	vertical-align: middle;
 }
 
-.checkbox-example label {
+.checkbox-label {
 	font-family: verdana;
 	font-size: 24px;
 	color: mistyrose;
@@ -59,14 +60,15 @@ label {
 
 select {
 	vertical-align: middle;
-	height: 32px;
+	height: 28px;
 	width: auto;
 	padding: 50px;
 }
 
 option {
 	vertical-align: middle;
-	font-size: 28px;
+	font-size: 25px;
+	width: auto;
 	padding: 50px;
 }
 
