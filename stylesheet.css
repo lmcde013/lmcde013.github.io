@@ -24,6 +24,12 @@ textarea {
 	padding: 50px;
 }
 
+select {
+	vertical-align: middle;
+	height: 24px;
+	padding: 40px;
+}
+
 .radio-button {
 	vertical-align: middle;
 }
@@ -46,22 +52,13 @@ textarea {
 	padding: 25px;
 }
 
-.label {
+questions{
 	font-family: verdana;
-}
-
-.questions{
 	color: mistyrose;	
 	font-size: 125%;
 	display: block;
 	text-align: center;
 	padding: 50px;
-}
-
-select {
-	vertical-align: middle;
-	height: 24px;
-	padding: 40px;
 }
 
 ul.a {
