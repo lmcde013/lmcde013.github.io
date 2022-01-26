@@ -27,7 +27,7 @@ textarea {
 select {
 	margin-left: auto;
 	margin-right:auto;
-	height: 20px;
+	height: auto;
 	padding: 40px;
 }
 
@@ -46,6 +46,7 @@ label {
 
 .radio-button label {
 	padding: 25px;
+	position: relative;
 }
 
 .checkbox-example {
@@ -54,6 +55,7 @@ label {
 
 .checkbox-example label {
 	padding: 25px;
+	position: relative;
 }
 
 questions {
