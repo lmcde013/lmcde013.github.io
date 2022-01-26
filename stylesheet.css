@@ -1,7 +1,6 @@
 body {
 	background-color: indigo;
 	text-align: center;
-	color: mistyrose;
 }
 
 h {
@@ -32,7 +31,7 @@ select {
 	padding: 40px;
 }
 
-questions {
+label {
 	color: mistyrose;
 	font-family: verdana;
 	font-size: 125%;
@@ -47,7 +46,7 @@ questions {
 
 .radio-button label {
 	font-size: 24px;
-	padding: 50px;
+	padding: 25px;
 }
 
 .checkbox-example {
