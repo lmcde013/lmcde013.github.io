@@ -24,10 +24,6 @@ textarea {
 	padding: 50px;
 }
 
-input[type="radio"], input[type="checkbox"} {
-	position: relative;
-}
-
 .radio-button label {
 	font-family: verdana;
 	font-size: 24px;
@@ -78,3 +74,7 @@ ul.a {
 #button (
 
 )
+
+input[type="radio"], input[type="checkbox"} {
+	position: relative;
+}
