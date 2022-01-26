@@ -1,18 +1,12 @@
 body {
 	background-color: indigo;
+	text-align: center;
 }
 
-h1 {
+h {
 	color:gainsboro;
 	font-family:verdana;
 	font-size:300%;
-	text-align:center;
-}
-
-h2 {
-	color:mistyrose;
-	font-family:verdana;
-	font-size:200%;
 	text-align:center;
 }
 
@@ -24,24 +18,33 @@ p {
 }
 
 textarea {
-	vertical-align: middle;
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
 }
 
 .radio-button label {
 	font-family: verdana;
 	font-size: 24px;
 	color:mistyrose;
-	vertical-align: middle;
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
 }
 
 .checkbox-example label {
 	font-family: verdana;
 	font-size: 24px;
 	color:mistyrose;
-	vertical-align: middle;
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
 }
+
 
 ul.a {
 	list-style-type: circle;
-	vertical-align: middle;	
+	display: block;
+	margin-left: auto;
+	margin-right:auto;	
 }
