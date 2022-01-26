@@ -40,22 +40,22 @@ label {
 	padding: 50px;
 }
 
-.radio-button {
+.radio-button input {
 	vertical-align: middle;
 }
 
 .radio-button label {
 	padding: 25px;
-	position: relative;
+	padding-right: 15px;
 }
 
-.checkbox-example {
+.checkbox-example input {
 	vertical-align: middle;
 }
 
 .checkbox-example label {
 	padding: 25px;
-	position: relative;
+	padding-right: 15px;
 }
 
 questions {
@@ -68,7 +68,7 @@ questions {
 
 select {
 	vertical-align: middle;
-	height: 24px;
+	height: 18px;
 	width: auto;
 	padding: 40px;
 }
