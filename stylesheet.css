@@ -45,7 +45,7 @@ input[type="radio"], input[type="checkbox"} {
 	padding: 50px;
 }
 
-label {
+.label {
 	color: mistyrose;
 	font-family: verdana;
 	font-size: 125%;
@@ -53,6 +53,8 @@ label {
 	display: block;
 	padding: 50px;
 }
+
+.questions{}
 
 select {
 	vertical-align: middle;
