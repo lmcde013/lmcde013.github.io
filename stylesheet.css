@@ -49,6 +49,7 @@ label {
 	padding: 25px;
 }
 
+<<<<<<< HEAD
 .checkbox-example {
 	vertical-align: middle;
 }
@@ -56,6 +57,29 @@ label {
 .checkbox-example label {
 	font-size: 24px;
 	padding: 25px;
+=======
+label {
+	font-family: verdana;
+}
+
+questions{
+	color: mistyrose;	
+	font-size: 125%;
+	display: block;
+	text-align: center;
+	padding: 50px;
+}
+
+select {
+	vertical-align: middle;
+	height: 24px;
+	width: auto;
+	padding: 40px;
+>>>>>>> parent of 2448690 (Update stylesheet.css)
+}
+
+option {
+	font-size: 25px;
 }
 
 ul.a {
@@ -64,7 +88,10 @@ ul.a {
 	margin-left: auto;
 	margin-right:auto;	
 }
+<<<<<<< HEAD
 
 button {
 	padding: 50 px;
 }
+=======
+>>>>>>> parent of 2448690 (Update stylesheet.css)
