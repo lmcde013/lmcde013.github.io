@@ -4,17 +4,17 @@ body {
 }
 
 h {
-	color:gainsboro;
-	font-family:verdana;
-	font-size:300%;
-	text-align:center;
+	color: gainsboro;
+	font-family: verdana;
+	font-size: 300%;
+	text-align: center;
 }
 
 p {
-	color:mistyrose;
-	font-family:verdana;
-	font-size:140%;
-	text-align:center;
+	color: mistyrose;
+	font-family: verdana;
+	font-size: 140%;
+	text-align: center;
 }
 
 textarea {
@@ -26,22 +26,22 @@ textarea {
 .radio-button label {
 	font-family: verdana;
 	font-size: 24px;
-	color:mistyrose;
+	color: mistyrose;
 	vertical-align: middle;
 }
 
 .checkbox-example label {
 	font-family: verdana;
 	font-size: 24px;
-	color:mistyrose;
+	color: mistyrose;
 	vertical-align: middle;
 }
 
-.label {
-	color:mistyrose;
-	font-family:verdana;
-	font-size:140%;
-	text-align:center;
+label {
+	color: mistyrose;
+	font-family: verdana;
+	font-size: 140%;
+	text-align: center;
 }
 
 select {
