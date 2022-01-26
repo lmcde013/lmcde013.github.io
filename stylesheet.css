@@ -24,29 +24,34 @@ textarea {
 	padding: 50px;
 }
 
+.radio-button {
+	vertical-align: middle;
+}
+
 .radio-button label {
 	font-family: verdana;
 	font-size: 24px;
 	color: mistyrose;
-	vertical-align: middle;
 	padding: 50px;
 }
 
+.checkbox-example {
+	vertical-align: middle;
+}
 
 .checkbox-example label {
 	font-family: verdana;
 	font-size: 24px;
 	color: mistyrose;
-	vertical-align: middle;
 	padding: 25px;
 }
 
 label {
-	color: mistyrose;
 	font-family: verdana;
 }
 
 .questions{
+	color: mistyrose;	
 	font-size: 125%;
 	display: block;
 	text-align: center;
@@ -55,13 +60,12 @@ label {
 
 select {
 	vertical-align: middle;
-	height: 28px;
+	height: 24px;
 	width: auto;
-	padding: 50px;
+	padding: 40px;
 }
 
 option {
-	vertical-align: middle;
 	font-size: 25px;
 }
 
