@@ -41,7 +41,7 @@ label {
 }
 
 .radio-button input {
-	vertical-align: middle;
+	position: relative;
 }
 
 .radio-button label {
@@ -50,7 +50,7 @@ label {
 }
 
 .checkbox-example input {
-	vertical-align: middle;
+	position: relative;
 }
 
 .checkbox-example label {
