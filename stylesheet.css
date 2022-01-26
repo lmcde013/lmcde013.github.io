@@ -25,17 +25,15 @@ textarea {
 }
 
 select {
-	vertical-align: middle;
+	margin-left: auto;
+	margin-right:auto;
 	height: 24px;
 	padding: 40px;
 }
 
-.label {
+questions {
 	color: mistyrose;
-	font-family: verdana;	
-}
-
-.questions {
+	font-family: verdana;
 	font-size: 125%;
 	display: block;
 	text-align: center;
