@@ -21,6 +21,11 @@ textarea {
 	display: block;
 	margin-left: auto;
 	margin-right:auto;
+	padding: 50px;
+}
+
+.radio-button {
+	position: relative;
 }
 
 .radio-button label {
@@ -28,6 +33,11 @@ textarea {
 	font-size: 24px;
 	color: mistyrose;
 	vertical-align: middle;
+	padding: 50px;
+}
+
+.checkbox-example {
+	position: relative;
 }
 
 .checkbox-example label {
@@ -35,6 +45,7 @@ textarea {
 	font-size: 24px;
 	color: mistyrose;
 	vertical-align: middle;
+	padding: 50px;
 }
 
 label {
@@ -43,17 +54,20 @@ label {
 	font-size: 140%;
 	text-align: center;
 	display: block;
+	padding: 50px;
 }
 
 select {
 	vertical-align: middle;
-	height: 28px;
+	height: 32px;
 	width: auto;
+	padding: 50px;
 }
 
 option {
 	vertical-align: middle;
-	font-size: 24px;
+	font-size: 28px;
+	padding: 50px;
 }
 
 ul.a {
@@ -62,3 +76,7 @@ ul.a {
 	margin-left: auto;
 	margin-right:auto;	
 }
+
+#button (
+
+)
