@@ -45,24 +45,18 @@ label {
 }
 
 .radio-button label {
-	font-size: 24px;
 	padding: 25px;
 }
 
-<<<<<<< HEAD
 .checkbox-example {
 	vertical-align: middle;
 }
 
 .checkbox-example label {
-	font-size: 24px;
 	padding: 25px;
-=======
-label {
-	font-family: verdana;
 }
 
-questions{
+questions {
 	color: mistyrose;	
 	font-size: 125%;
 	display: block;
@@ -75,7 +69,6 @@ select {
 	height: 24px;
 	width: auto;
 	padding: 40px;
->>>>>>> parent of 2448690 (Update stylesheet.css)
 }
 
 option {
@@ -88,10 +81,8 @@ ul.a {
 	margin-left: auto;
 	margin-right:auto;	
 }
-<<<<<<< HEAD
 
 button {
 	padding: 50 px;
 }
-=======
->>>>>>> parent of 2448690 (Update stylesheet.css)
+
