@@ -77,13 +77,6 @@ option {
 	font-size: 25px;
 }
 
-ul.a {
-	list-style-type: circle;
-	display: block;
-	margin-left: auto;
-	margin-right:auto;	
-}
-
 button {
 	padding: 50 px;
 }
