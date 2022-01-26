@@ -42,6 +42,7 @@ label {
 	font-family: verdana;
 	font-size: 140%;
 	text-align: center;
+	display: block;
 }
 
 select {
