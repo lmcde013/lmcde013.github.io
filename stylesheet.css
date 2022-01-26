@@ -36,3 +36,7 @@ p {
 	color:mistyrose;
 	left: +100px;
 }
+
+ul.a {
+	list-style-type: circle;	
+}
