@@ -50,14 +50,6 @@ label {
 	padding-right: 15px;
 }
 
-questions {
-	color: mistyrose;	
-	font-size: 125%;
-	display: block;
-	text-align: center;
-	padding: 50px;
-}
-
 select {
 	vertical-align: middle;
 	height: 18px;
