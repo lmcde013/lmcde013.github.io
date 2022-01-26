@@ -40,17 +40,9 @@ label {
 	padding: 50px;
 }
 
-.radio-button input {
-	position: relative;
-}
-
 .radio-button label {
 	padding: 25px;
 	padding-right: 15px;
-}
-
-.checkbox-example input {
-	position: relative;
 }
 
 .checkbox-example label {
