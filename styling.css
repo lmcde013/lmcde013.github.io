@@ -5,7 +5,19 @@
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: #2D1562;
+}
+
+body {
+	background-color: #8F3A84;
+	text-align: center;
+}
+
+h {
+	color: gainsboro;
+	font-family: verdana;
+	font-size: 300%;
+	text-align: center;
 }
 
 /* Style the buttons that are used to open the tab content */
