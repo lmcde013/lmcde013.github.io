@@ -25,17 +25,18 @@
 		<p>Do you have any dietary restrictions?</p>
 		<p>Please select all that apply from the list below for your catered grocery experience:</p>
 		<div class="checkbox-example">
-			<input type="checkbox" id="dietSelect" name="dietSelect" value="vegetarian" onchange="populateListProductChoices(this.id, 'displayProduct')">
+			<input type="checkbox" id="dietSelect" name="dietSelect" value="vegetarian" onchange="populateProduct(this.id)">
 			<label for="dietSelect">Vegetarian</label><br>
-			<input type="checkbox" id="dietSelect" name="dietSelect" value="GlutenFree" onchange="populateListProductChoices(this.id, 'displayProduct')">
+			<input type="checkbox" id="dietSelect" name="dietSelect" value="glutenFree" onchange="populateProduct(this.id)">
 			<label for="dietSelect">Gluten Free</label><br>
-			<input type="checkbox" id="dietSelect" name="dietSelect" value="Organic" onchange="populateListProductChoices(this.id, 'displayProduct')">
+			<input type="checkbox" id="dietSelect" name="dietSelect" value="organic" onchange="populateProduct(this.id)">
 			<label for="dietSelect">Organic products only</label><br>
-			<input type="checkbox" id="dietSelect" name="dietSelect" value="Prepared" onchange="populateListProductChoices(this.id, 'displayProduct')">
+			<input type="checkbox" id="dietSelect" name="dietSelect" value="prepared" onchange="populateProduct(this.id)">
 			<label for="dietSelect">Healthy Prepared Meals</label><br>
-			<input type="checkbox" id="dietSelect" name="dietSelect" value="None" onchange="populateListProductChoices(this.id, 'displayProduct')">
+			<input type="checkbox" id="dietSelect" name="dietSelect" value="none" onchange="populateProduct(this.id)">
 			<label for="dietSelect">None - show me all products </label><br>
 		</div>
+		
 		<button id="Submitneeds" type="button" class="block" onclick="selectedNeeds()">
 			Submit for catered products list.
 		</button>

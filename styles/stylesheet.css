@@ -46,7 +46,23 @@ select {
 	padding: 30px;
 }
 
+label {
+	color: mistyrose;
+	font-family: verdana;
+	font-size: 100%;
+	display: block;
+	text-align: center;
+	padding: 50px;
+}
 
+.checkbox-example label {
+	padding: 25px;
+	padding-right: 15px;
+}
+
+button {
+	padding: 50 px;
+}
 
 /* Style the tab */
 .tab {

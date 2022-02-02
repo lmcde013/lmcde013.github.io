@@ -10,28 +10,79 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		
-		price: 1.99
+		prepared: false,
+		price: 3.99
+	},
+	{
+		name: "carrots",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		prepared: false,
+		price: 4.99
 	},
 	{
 		name: "bread",
 		vegetarian: true,
 		glutenFree: false,
 		organic: true,
+		prepared: false,
 		price: 2.35
 	},
 	{
-		name: "free-range eggs",
+		name: "macaroni pasta",
+		vegetarian: true,
+		glutenFree: false,
+		organic: true,
+		prepared: false,
+		price: 2.50
+	},
+	{
+		name: "free-range eggs - dozen",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
+		prepared: false,
 		price: 5.99
+	},
+	{
+		name: "cheese",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		prepared: false,
+		price: 6.75
+	},
+	{
+		name: "cabbage rolls - mushroom & rice",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		prepared: true,
+		price: 16.00
+	},
+	{
+		name: "cabbage rolls - beef & rice",
+		vegetarian: false,
+		glutenFree: true,
+		organic: true,
+		prepared: true,
+		price: 18.00
+	},
+	{
+		name: "beef",
+		vegetarian: false,
+		glutenFree: true,
+		organic: true,
+		prepared: false,
+		price: 8.00
 	},
 	{
 		name: "salmon",
 		vegetarian: false,
 		glutenFree: true,
 		organic: true,
+		prepared: false,
 		price: 10.00
 	}
 ];

@@ -24,13 +24,14 @@ function openInfo(evt, tabName) {
 
 }
 
-
-	
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
 
-function populateListProductChoices(slct1, slct2) {
-    var s1 = document.getElementById(slct1);
+function populateProduct(checkbox) {
+    if(checkbox.checked == true) {
+		
+	
+	var s1 = document.getElementById(slct1);
     var s2 = document.getElementById(slct2);
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
