@@ -13,7 +13,7 @@
 
 	<!-- Tab links, each one with an onclick event associated with it -->
 	<div class="tab">
-	  <button class="tablinks" onclick="openInfo(event, 'Client')">Dietary Restrictions</button>
+	  <button class="tablinks" onclick="openInfo(event, 'Client')">Client Needs</button>
 	  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
 	  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
 	</div>
@@ -22,8 +22,8 @@
 	<div id="Client" class="tabcontent">
 	  <h3>Client Information</h3>
 	  <p>Tell us a bit about you.</p>
-		Do you have any dietary restrictions? 
-		Please select from the list below for your catered experience:
+	  <p>Do you have any dietary restrictions?</p>
+	  <p>Please select from the list below for your catered experience:</p>
 		<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
 		<option value=""></option>
 		<option value="Vegetarian">Vegetarian</option>
@@ -41,8 +41,7 @@
 			<input type="radio" id="idk" name="i-16" value="idk">
 			<label for="idk">I don't know</label><br>
 		</div>
-	</div>
-	
+	</div>	
 
 	<div id="Products" class="tabcontent">
 	  <h3>Your targeted products</h3>
