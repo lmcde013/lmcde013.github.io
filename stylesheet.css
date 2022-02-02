@@ -13,13 +13,6 @@ h {
 	text-align: center;
 }
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #2D1562;
-}
-
 p {
 	color: mistyrose;
 	font-family: verdana;
