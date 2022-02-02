@@ -6,7 +6,7 @@
 
 function openInfo(evt, tabName) {
 
-	//Get all elements with class="tabcontent" and hide them
+	// Get all elements with class="tabcontent" and hide them
 	tabcontent = document.getElementsByClassName("tabcontent");
 	for (i = 0; i < tabcontent.length; i++) {
 		tabcontent[i].style.display = "none";
@@ -24,14 +24,13 @@ function openInfo(evt, tabName) {
 
 }
 
+
+	
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
 
-function populateProduct(checkbox) {
-    if(checkbox.checked == true) {
-		
-	
-	var s1 = document.getElementById(slct1);
+function populateListProductChoices(slct1, slct2) {
+    var s1 = document.getElementById(slct1);
     var s2 = document.getElementById(slct2);
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty

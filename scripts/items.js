@@ -92,13 +92,16 @@ var products = [
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 
-function restrictListProducts(prods, restriction) {
+function restrictListProducts(prods, checkbox) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+		if ((cheeckbox.checked == "vegetarian") && (prods[i].vegetarian == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+		else if ((cheeckbox.checked  == "glutenFree") && (prods[i].glutenFree == true)){
+			product_names.push(prods[i].name);
+		}
+		else if ((cheeckbox.checked == "organic") && (prods[i].glutenFree == true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
