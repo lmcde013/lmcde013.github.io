@@ -20,33 +20,32 @@
 
 	<!-- Tab content -->
 	<div id="Client" class="tabcontent">
-	  <h3>Client Information</h3>
-	  <p>Tell us a bit about you.</p>
-	  <p>Do you have any dietary restrictions?</p>
-	  <p>Please select from the list below for your catered experience:</p>
-		<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-		<option value=""></option>
-		<option value="Vegetarian">Vegetarian</option>
-		<option value="GlutenFree">GlutenFree</option>
-		<option value="None">None</option>
-		</select>
-		
-	  <p>Do you require healthy prepared meals to meet your needs?</p>
-	  <p>This is not a luxury but a disability accommodation for many.</p>
-	   <div class="radio-button">			
-			<input type="radio" id="yes" name="i-16" value="yes">
-			<label for="yes">Yes</label><br>
-			<input type="radio" id="no" name="i-16" value="no">
-			<label for="no">No</label><br>
-			<input type="radio" id="idk" name="i-16" value="idk">
-			<label for="idk">I don't know</label><br>
+		<h3>Client Information</h3>
+		<p>Tell us a bit about your needs.</p>
+		<p>Do you have any dietary restrictions?</p>
+		<p>Please select all that apply from the list below for your catered grocery experience:</p>
+		<div class="checkbox-example">
+			<input type="checkbox" id="dietSelect" name="dietSelect" value="vegetarian" onchange="populateListProductChoices(this.id, 'displayProduct')">
+			<label for="dietSelect">Vegetarian</label><br>
+			<input type="checkbox" id="dietSelect" name="dietSelect" value="GlutenFree" onchange="populateListProductChoices(this.id, 'displayProduct')">
+			<label for="dietSelect">Gluten Free</label><br>
+			<input type="checkbox" id="dietSelect" name="dietSelect" value="Organic" onchange="populateListProductChoices(this.id, 'displayProduct')">
+			<label for="dietSelect">Organic products only</label><br>
+			<input type="checkbox" id="dietSelect" name="dietSelect" value="Prepared" onchange="populateListProductChoices(this.id, 'displayProduct')">
+			<label for="dietSelect">Healthy Prepared Meals</label><br>
+			<input type="checkbox" id="dietSelect" name="dietSelect" value="None" onchange="populateListProductChoices(this.id, 'displayProduct')">
+			<label for="dietSelect">None - show me all products </label><br>
 		</div>
-	</div>	
+		<button id="Submitneeds" type="button" class="block" onclick="selectedNeeds()">
+			Submit for catered products list.
+		</button>
+	</div>
+
 
 	<div id="Products" class="tabcontent">
-	  <h3>Your targeted products</h3>
-	  <p>We preselected products based on your restrictions.</p>
-		 Choose items to buy:
+	  <h3>Your catered products</h3>
+	  <p>We preselected products based on your dietary needs.</p>
+		 Select items to add to your shopping cart:
 		 <div id="displayProduct"></div>
 		 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 			Add selected items to cart.
