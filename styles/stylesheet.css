@@ -55,8 +55,14 @@ label {
 	padding: 50px;
 }
 
+.checkbox-example label,input {
+	display: inline-block;
+	vertical-align: middle;
+)	
+
 button {
-	padding: 50 px;
+	padding: 100 px;
+	font-size: 100%;
 }
 
 /* Style the tab */
