@@ -37,22 +37,14 @@ h3 {
 	text-align: center;
 }
 
-select {
+.select {
 	color: black;
 	font-family: verdana;
 	margin-left: auto;
 	margin-right: auto;
 	height: auto;
+	width: auto;
 	padding: 30px;
-}
-
-.checkbox-example label,input {
-	color: mistyrose;
-	font-family: verdana;
-	font-size: 100%;
-	display: inline-block;
-	vertical-align: middle;
-	padding: 10px;
 }	
 
 button {
