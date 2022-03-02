@@ -38,6 +38,7 @@ h3 {
 }
 
 .select {
+	display: block;
 	color: black;
 	font-family: verdana;
 	margin-left: auto;
