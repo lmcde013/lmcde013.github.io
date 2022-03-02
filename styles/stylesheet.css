@@ -46,18 +46,13 @@ select {
 	padding: 30px;
 }
 
-label {
+.checkbox-example label,input {
 	color: mistyrose;
 	font-family: verdana;
 	font-size: 100%;
-	display: block;
-	text-align: center;
-	padding: 50px;
-}
-
-.checkbox-example label,input {
 	display: inline-block;
 	vertical-align: middle;
+	padding: 10px;
 )	
 
 button {
