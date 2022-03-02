@@ -95,16 +95,16 @@ var products = [
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "vegetarian") && (prods[i].vegetarian == true)){
+		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction  == "glutenFree") && (prods[i].glutenFree == true)){
+		else if ((restriction  == "Gluten Free") && (prods[i].glutenFree == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction == "organic") && (prods[i].organic == true)){
+		else if ((restriction == "Organic") && (prods[i].organic == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction == "prepared") && (prods[i].prepared == true)){
+		else if ((restriction == "Healthy Prepared Meals") && (prods[i].prepared == true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
