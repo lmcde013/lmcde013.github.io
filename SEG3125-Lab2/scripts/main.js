@@ -46,13 +46,14 @@ function dietSelect(d1,d2,d3,d4) {
 	} else {
 		dietType = "None";
 	}
+	return dietType;
 }	
 	
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
 
 function populateListProductChoices(slct1, slct2, slct3, slct4, dp) {
-    var dt1 = document.getElementById(slct1);
+    var	dt1 = document.getElementById(slct1);
 	var dt2 = document.getElementById(slct2);
 	var dt3 = document.getElementById(slct3);
 	var dt4 = document.getElementById(slct4);
