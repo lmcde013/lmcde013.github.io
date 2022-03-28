@@ -11,7 +11,7 @@ body {
 /* Style store name */
 h {
 	font-family: verdana;
-	font-size: 400%;
+	font-size: 50px;
 	text-align: center;
 	padding: 50px;
 	color: #008080; /* Teal */
@@ -20,17 +20,17 @@ h {
 /* Style tab content headers */
 h3 {
 	font-family: verdana;
-	font-size: 275%;
+	font-size: 30px;
 	text-align: center;
-	padding: 14px;
+	/* padding: 14px;*/
 }
 
 /* Style tab content text */
 p {
 	font-family: verdana;
-	font-size: 200%;
+	font-size: 20px;
 	text-align: center;
-	padding: 14px;
+	padding: 10px;
 }
 
 /* Style the tab */
@@ -38,13 +38,13 @@ p {
   overflow: hidden;
   border: 1px solid #ccc; /* White */
   background-color: #FAF0E6; /* Linen */
-  padding: 100px;
+  padding: 10px;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
-  font-size: 300%;
+  font-size: 40px;
   float: center;
   border: none;
   outline: none;
@@ -73,7 +73,7 @@ p {
 
 .tabcontent button {
 	background-color: #FAF0E6; /* Linen */
-	font-size: 200%;
+	font-size: 20px;
 	float: center;
 	padding: 14px 25px;
 	cursor: pointer;
@@ -81,6 +81,6 @@ p {
 
 .checkbox label {
 	font-family: verdana;
-	font-size: 200%;
-	padding: 16px;
+	font-size: 20px;
+	padding: 16px 16px;
 }
