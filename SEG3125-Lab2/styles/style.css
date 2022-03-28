@@ -13,7 +13,7 @@ h {
 	font-family: verdana;
 	font-size: 400%;
 	text-align: center;
-	padding: 100px;
+	padding: 50px;
 	color: #008080; /* Teal */
 }
 
@@ -22,7 +22,7 @@ h3 {
 	font-family: verdana;
 	font-size: 250%;
 	text-align: center;
-	padding: 40px;
+	padding: 20px;
 }
 
 /* Style tab content text */
@@ -30,9 +30,8 @@ p {
 	font-family: verdana;
 	font-size: 200%;
 	text-align: center;
-	padding: 40px;
+	padding: 16px;
 }
-
 
 /* Style the tab */
 .tab {
@@ -73,9 +72,15 @@ p {
 }
 
 .tabcontent button {
-	background-color: inherit;
+	background-color: #FAF0E6; /* Linen */
 	font-size: 200%;
 	float: center;
 	padding: 14px 25px;
 	cursor: pointer;
+}
+
+.checkbox {
+	font-family: verdana;
+	font-size: 200%;
+	padding: 16px;
 }
