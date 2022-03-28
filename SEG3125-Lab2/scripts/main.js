@@ -24,7 +24,7 @@ function openInfo(evt, tabName) {
 
 // determine diet based on multiple restrictions
 function dietSelect(d1,d2,d3,d4) {
-	var dietType;
+	var dietType = "";
 	
 	if (d1 == "Veg" && d2 == "GF" && d3 == "Org") {
 		dietType = "VGO";
@@ -84,7 +84,7 @@ function populateListProductChoices(slct1, slct2) {
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
 	}
-	function clickbutton("Products")
+	openInfo(event, 'Products');
 }
 	
 // This function is called when the "Add selected items to cart" button in clicked
@@ -115,9 +115,4 @@ function selectedItems(){
 	c.appendChild(para);
 	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
 		
-}
-
-function clickbutton(tab) {
-	var tabbutton = document.getElementById(tab);
-	tabbutton.click();
 }

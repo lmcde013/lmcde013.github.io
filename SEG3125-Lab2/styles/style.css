@@ -5,6 +5,7 @@
 body {
 	background-color: #D3D3D3; /* LightGray */
 	text-align: center;
+	font-family: verdana;
 }
 
 /* Style store name */
@@ -12,9 +13,26 @@ h {
 	font-family: verdana;
 	font-size: 400%;
 	text-align: center;
-	padding: 200px;
+	padding: 100px;
 	color: #008080; /* Teal */
 }
+
+/* Style tab content headers */
+h3 {
+	font-family: verdana;
+	font-size: 250%;
+	text-align: center;
+	padding: 40px;
+}
+
+/* Style tab content text */
+p {
+	font-family: verdana;
+	font-size: 200%;
+	text-align: center;
+	padding: 40px;
+}
+
 
 /* Style the tab */
 .tab {
@@ -52,4 +70,12 @@ h {
   padding: 6px 12px;
   border: 1px solid #ccc; /* White */
   border-top: none;
+}
+
+.tabcontent button {
+	background-color: inherit;
+	font-size: 200%;
+	float: center;
+	padding: 14px 25px;
+	cursor: pointer;
 }
