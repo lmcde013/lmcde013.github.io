@@ -59,8 +59,8 @@ function dietSelect(d1,d2,d3,d4) {
 // it makes each product name as the label for the checkbos
 
 function populateListProductChoices(slct1, slct2) {
-    var s1 = document.getElementById(slct1);
-    var s2 = document.getElementById(slct2);
+    var s1 = slct1;
+    var s2 = slct2;
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";
@@ -91,7 +91,7 @@ function populateListProductChoices(slct1, slct2) {
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
 	}
-	openInfo(event, 'Products');
+	openInfo(event, "Products");
 }
 	
 // This function is called when the "Add selected items to cart" button in clicked
