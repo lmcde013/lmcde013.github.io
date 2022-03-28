@@ -5,20 +5,46 @@
 var products = [
 	{
 		name: "brocoli",
+		vegGlutenFreeOrganic: false,
+		vegGlutenFree: true,
+		vegOrganic: false,
+		glutenFreeOrganic: false,
 		vegetarian: true,
 		glutenFree: true,
+		organic: false,
 		price: 1.99
 	},
 	{
+		name: "brocoli - Organic",
+		vegGlutenFreeOrganic: true,
+		vegGlutenFree: true,
+		vegOrganic: true,
+		glutenFreeOrganic: true,
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 3.99
+	},
+	{
 		name: "bread",
+		vegGlutenFreeOrganic: false,
+		vegGlutenFree: false,
+		vegOrganic: false,
+		glutenFreeOrganic: false,
 		vegetarian: true,
 		glutenFree: false,
+		organic: false,
 		price: 2.35
 	},
 	{
 		name: "salmon",
+		vegGlutenFreeOrganic: false,
+		vegGlutenFree: false,
+		vegOrganic: false,
+		glutenFreeOrganic: false,
 		vegetarian: false,
 		glutenFree: true,
+		organic: false,
 		price: 10.00
 	}
 ];
@@ -31,10 +57,25 @@ var products = [
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+		if ((restriction == "VGO") && (prods[i].vegGlutenFreeOrganic == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+		else if ((restriction == "VG") && (prods[i].vegGlutenFree == true)){
+			product_names.push(prods[i].name);
+		}
+		else if ((restriction == "VO") && (prods[i].vegOrganic == true)){
+			product_names.push(prods[i].name);
+		}
+		else if ((restriction == "GO") && (prods[i].glutenFreeOrganic == true)){
+			product_names.push(prods[i].name);
+		}
+		else if ((restriction == "V") && (prods[i].vegetarian == true)){
+			product_names.push(prods[i].name);
+		}
+		else if ((restriction == "GF") && (prods[i].glutenFree == true)){
+			product_names.push(prods[i].name);
+		}
+		else if ((restriction == "O") && (prods[i].organic == true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){

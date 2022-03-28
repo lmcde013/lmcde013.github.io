@@ -22,7 +22,31 @@ function openInfo(evt, tabName) {
 
 }
 
-
+// determine diet based on multiple restrictions
+function dietSelect(d1,d2,d3,d4) {
+	var dietType;
+	
+	if (d1 == "Veg" && d2 == "GF" && d3 == "Org") {
+		dietType = "VGO";
+	} else if (d1 == "Veg" && d2 == "GF") {
+		dietType = "VG";
+	} else if (d1 == "Veg" && d3 == "Org") {
+		dietType = "VO";
+	} else if (d2 == "GF" && d3 == "Org") {
+		dietType = "GO";
+	} else if (d1 == "Veg") {
+		dietType = "V";
+	} else if (d2 == "GF") {
+		dietType = "GF";
+	} else if (d3 == "Org") {
+		dietType = "O";
+	} else if (d4 == "None") {
+		dietType = "None";
+	} else {
+		dietType = "None";
+	}
+	populateListProductChoices(dietType, 'displayProducts');
+}	
 	
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
@@ -60,6 +84,7 @@ function populateListProductChoices(slct1, slct2) {
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
 	}
+	openInfo(event, 'Products');
 }
 	
 // This function is called when the "Add selected items to cart" button in clicked

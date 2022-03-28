@@ -22,14 +22,19 @@
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
   <h3>Client Information</h3>
-  <p>Tell us a bit about you.</p>
+  <p>What are your dietary needs?</p>
 	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
-    <option value="None">None</option>
-	</select>
+	<input type="checkbox" id="diet1" name="diet1" value="Veg">
+	<label for="diet1"> Vegetarian </label><br>
+	<input type="checkbox" id="diet2" name="diet2" value="GF">
+	<label for="diet2"> Gluten Free </label><br>
+	<input type="checkbox" id="diet3" name="diet3" value="Org">
+	<label for="diet3"> Organic </label><br>
+	<input type="checkbox" id="diet4" name="diet4" value="None">
+	<label for="diet4"> No dietary Restrictions </label><br>
+	<button id="dietSelect" type="button" class="block" onclick="dietSelect(diet1, diet2, diet3, diet4)">
+		Display my resitricted grocery items list.
+	</button>
 </div>
 
 <div id="Products" class="tabcontent">
