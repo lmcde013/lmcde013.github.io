@@ -84,7 +84,7 @@ function populateListProductChoices(slct1, slct2) {
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
 	}
-	openInfo(event, 'Products');
+	function clickbutton("Products")
 }
 	
 // This function is called when the "Add selected items to cart" button in clicked
@@ -117,3 +117,7 @@ function selectedItems(){
 		
 }
 
+function clickbutton(tab) {
+	var tabbutton = document.getElementById(tab);
+	tabbutton.click();
+}

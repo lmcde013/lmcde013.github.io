@@ -14,9 +14,9 @@
 		
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
-  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
-  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+  <button id= "Client" class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button id="Products" class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button id= "Cart" class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
 </div>
 
 <!-- Tab content -->
@@ -32,6 +32,7 @@
 	<label for="diet3"> Organic </label><br>
 	<input type="checkbox" id="diet4" name="diet4" value="None">
 	<label for="diet4"> No dietary Restrictions </label><br>
+	
 	<button id="dietSelect" type="button" class="block" onclick="dietSelect(diet1, diet2, diet3, diet4)">
 		Display my resitricted grocery items list.
 	</button>

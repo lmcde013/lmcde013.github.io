@@ -12,7 +12,7 @@ h {
 	font-family: verdana;
 	font-size: 400%;
 	text-align: center;
-	padding: 200 px;
+	padding: 200px;
 	color: #008080; /* Teal */
 }
 
@@ -21,7 +21,7 @@ h {
   overflow: hidden;
   border: 1px solid #ccc; /* White */
   background-color: #FAF0E6; /* Linen */
-  padding: 100 px;
+  padding: 100px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -32,7 +32,7 @@ h {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 14px 25px;
   transition: 0.3s;
 }
 

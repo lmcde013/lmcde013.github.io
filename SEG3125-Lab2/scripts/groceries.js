@@ -4,7 +4,7 @@
 
 var products = [
 	{
-		name: "brocoli",
+		name: "Brocoli",
 		vegGlutenFreeOrganic: false,
 		vegGlutenFree: true,
 		vegOrganic: false,
@@ -15,7 +15,7 @@ var products = [
 		price: 1.99
 	},
 	{
-		name: "brocoli - Organic",
+		name: "Brocoli - Organic",
 		vegGlutenFreeOrganic: true,
 		vegGlutenFree: true,
 		vegOrganic: true,
@@ -26,7 +26,7 @@ var products = [
 		price: 3.99
 	},
 	{
-		name: "bread",
+		name: "Bread",
 		vegGlutenFreeOrganic: false,
 		vegGlutenFree: false,
 		vegOrganic: false,
@@ -37,7 +37,7 @@ var products = [
 		price: 2.35
 	},
 	{
-		name: "salmon",
+		name: "Salmon",
 		vegGlutenFreeOrganic: false,
 		vegGlutenFree: false,
 		vegOrganic: false,
