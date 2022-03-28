@@ -24,28 +24,35 @@ function openInfo(evt, tabName) {
 
 // determine diet based on multiple restrictions
 function dietSelect(d1,d2,d3,d4) {
+	var dt1 = document.getElementById(d1);
+	var dt2 = document.getElementById(d2);
+	var dt3 = document.getElementById(d3);
+	var dt4 = document.getElementById(d4);
+	
 	var dietType = "";
 	
-	if (d1 == "Veg" && d2 == "GF" && d3 == "Org") {
+	if (dt1 == "Veg" && dt2 == "GF" && dt3 == "Org") {
 		dietType = "VGO";
-	} else if (d1 == "Veg" && d2 == "GF") {
+	} else if (dt1 == "Veg" && dt2 == "GF") {
 		dietType = "VG";
-	} else if (d1 == "Veg" && d3 == "Org") {
+	} else if (dt1 == "Veg" && dt3 == "Org") {
 		dietType = "VO";
-	} else if (d2 == "GF" && d3 == "Org") {
+	} else if (dt2 == "GF" && dt3 == "Org") {
 		dietType = "GO";
-	} else if (d1 == "Veg") {
+	} else if (dt1 == "Veg") {
 		dietType = "V";
-	} else if (d2 == "GF") {
+	} else if (dt2 == "GF") {
 		dietType = "GF";
-	} else if (d3 == "Org") {
+	} else if (dt3 == "Org") {
 		dietType = "O";
-	} else if (d4 == "None") {
+	} else if (dt4 == "None") {
 		dietType = "None";
 	} else {
 		dietType = "None";
 	}
-	populateListProductChoices(dietType, 'displayProducts');
+	
+	var display = document.getElementById('displayProducts');
+	populateListProductChoices(dietType, display);
 }	
 	
 // generate a checkbox list from a list of products
