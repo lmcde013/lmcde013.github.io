@@ -24,43 +24,40 @@ function openInfo(evt, tabName) {
 
 // determine diet based on multiple restrictions
 function dietSelect(d1,d2,d3,d4) {
-	var dt1 = document.getElementById(d1);
-	var dt2 = document.getElementById(d2);
-	var dt3 = document.getElementById(d3);
-	var dt4 = document.getElementById(d4);
-	
+		
 	var dietType = "";
 	
-	if (dt1 == "Veg" && dt2 == "GF" && dt3 == "Org") {
+	if (d1 == "Veg" && d2 == "GF" && d3 == "Org") {
 		dietType = "VGO";
-	} else if (dt1 == "Veg" && dt2 == "GF") {
+	} else if (d1 == "Veg" && d2 == "GF") {
 		dietType = "VG";
-	} else if (dt1 == "Veg" && dt3 == "Org") {
+	} else if (d1 == "Veg" && d3 == "Org") {
 		dietType = "VO";
-	} else if (dt2 == "GF" && dt3 == "Org") {
+	} else if (d2 == "GF" && d3 == "Org") {
 		dietType = "GO";
-	} else if (dt1 == "Veg") {
+	} else if (d1 == "Veg") {
 		dietType = "V";
-	} else if (dt2 == "GF") {
+	} else if (d2 == "GF") {
 		dietType = "GF";
-	} else if (dt3 == "Org") {
+	} else if (d3 == "Org") {
 		dietType = "O";
-	} else if (dt4 == "None") {
+	} else if (d4 == "None") {
 		dietType = "None";
 	} else {
 		dietType = "None";
 	}
-	
-	var display = document.getElementById('displayProducts');
-	populateListProductChoices(dietType, display);
 }	
 	
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
 
-function populateListProductChoices(slct1, slct2) {
-    var s1 = slct1;
-    var s2 = slct2;
+function populateListProductChoices(slct1, slct2, slct3, slct4, dp) {
+    var dt1 = document.getElementById(slct1);
+	var dt2 = document.getElementById(slct2);
+	var dt3 = document.getElementById(slct3);
+	var dt4 = document.getElementById(slct4);
+	var s1 = dietType(dt1, dt2, dt3, dt4);
+    var s2 = document.getElementById(slct2);
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";

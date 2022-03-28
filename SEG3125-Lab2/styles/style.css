@@ -83,7 +83,7 @@ p {
 	font-family: verdana;
 	font-size: 25px;
 	float: center;
-	padding-top: 20px;
+	padding: 10px;
 	cursor: pointer;
 }
 
