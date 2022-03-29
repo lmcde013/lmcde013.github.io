@@ -23,62 +23,42 @@ function openInfo(evt, tabName) {
 }
 
 // determine diet based on multiple restrictions
-/* function dietSelect(d1, d2, d3, d4) {
+function dietSelect(d1, d2, d3, d4) {
 		
 	var dietType = "";
 	
-	if (d1 == "Veg" && d2 == "GF" && d3 == "Org") {
+	if (d1 === "Veg" && d2 === "GF" && d3 === "Org") {
 		dietType = "VGO";
-	} else if (d1 == "Veg" && d2 == "GF") {
+	} else if (d1 === "Veg" && d2 === "GF") {
 		dietType = "VG";
-	} else if (d1 == "Veg" && d3 == "Org") {
+	} else if (d1 === "Veg" && d3 === "Org") {
 		dietType = "VO";
-	} else if (d2 == "GF" && d3 == "Org") {
+	} else if (d2 === "GF" && d3 === "Org") {
 		dietType = "GO";
-	} else if (d1 == "Veg") {
+	} else if (d1 === "Veg") {
 		dietType = "V";
-	} else if (d2 == "GF") {
+	} else if (d2 === "GF") {
 		dietType = "GF";
-	} else if (d3 == "Org") {
+	} else if (d3 === "Org") {
 		dietType = "O";
-	} else if (d4 == "None") {
+	} else if (d4 === "None") {
 		dietType = "None";
 	} else {
 		dietType = "None";
 	}
 	return dietType;
-}	*/
+}	
 	
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
 
 function populateListProductChoices(slct1, slct2, slct3, slct4, dp) {
-    var	d1 = document.getElementById(slct1);
-	var d2 = document.getElementById(slct2);
-	var d3 = document.getElementById(slct3);
-	var d4 = document.getElementById(slct4);
+    var	dt1 = document.getElementById(slct1);
+	var dt2 = document.getElementById(slct2);
+	var dt3 = document.getElementById(slct3);
+	var dt4 = document.getElementById(slct4);
+	var s1 = dietType(dt1, dt2, dt3, dt4);
     var s2 = document.getElementById(dp);
-	var s1;
-	
-	if (d1 == "Veg" && d2 == "GF" && d3 == "Org") {
-		s1 = "VGO";
-	} else if (d1 == "Veg" && d2 == "GF") {
-		s1 = "VG";
-	} else if (d1 == "Veg" && d3 == "Org") {
-		s1 = "VO";
-	} else if (d2 == "GF" && d3 == "Org") {
-		s1 = "GO";
-	} else if (d1 == "Veg") {
-		s1 = "V";
-	} else if (d2 == "GF") {
-		s1 = "GF";
-	} else if (d3 == "Org") {
-		s1 = "O";
-	} else if (d4 == "None") {
-		s1 = "None";
-	} else {
-		s1 = "None";
-	}
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";
