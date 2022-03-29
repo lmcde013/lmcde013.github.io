@@ -23,7 +23,7 @@ function openInfo(evt, tabName) {
 }
 
 // determine diet based on multiple restrictions
-function dietSelect(d1,d2,d3,d4) {
+function dietSelect(d1, d2, d3, d4) {
 		
 	var dietType = "";
 	
