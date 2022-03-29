@@ -29,19 +29,19 @@ function dietSelect(d1, d2, d3, d4) {
 	
 	if (d1 === "Veg" && d2 === "GF" && d3 === "Org") {
 		dietType = "VGO";
-	} else if (d1 === "Veg" && d2 === "GF") {
+	} else if ((d1 == "Veg") && (d2 == "GF")) {
 		dietType = "VG";
-	} else if (d1 === "Veg" && d3 === "Org") {
+	} else if ((d1 == "Veg") && (d3 == "Org")) {
 		dietType = "VO";
-	} else if (d2 === "GF" && d3 === "Org") {
+	} else if ((d2 == "GF") && (d3 == "Org")) {
 		dietType = "GO";
-	} else if (d1 === "Veg") {
+	} else if (d1 == "Veg") {
 		dietType = "V";
-	} else if (d2 === "GF") {
+	} else if (d2 == "GF") {
 		dietType = "GF";
-	} else if (d3 === "Org") {
+	} else if (d3 == "Org") {
 		dietType = "O";
-	} else if (d4 === "None") {
+	} else if (d4 == "None") {
 		dietType = "None";
 	} else {
 		dietType = "None";
@@ -50,7 +50,7 @@ function dietSelect(d1, d2, d3, d4) {
 }	
 	
 // generate a checkbox list from a list of products
-// it makes each product name as the label for the checkbos
+// it makes each product name as the label for the checkboxes
 
 function populateListProductChoices(slct1, slct2, slct3, slct4, dp) {
     var	dt1 = document.getElementById(slct1).value;
@@ -64,7 +64,7 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, dp) {
     s2.innerHTML = "";
 		
 	// obtain a reduced list of products based on restrictions
-    var optionArray = restrictListProducts(products, s1.value);
+    var optionArray = restrictListProducts(products, s1);
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
@@ -89,7 +89,7 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, dp) {
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
 	}
-	/* openInfo(event, "Products"); */
+	document.getElementById("Products").addEventListener('click', openInfo(event, 'Products'));
 }
 	
 // This function is called when the "Add selected items to cart" button in clicked
