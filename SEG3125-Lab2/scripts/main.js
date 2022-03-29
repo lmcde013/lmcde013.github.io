@@ -53,10 +53,10 @@ function dietSelect(d1, d2, d3, d4) {
 // it makes each product name as the label for the checkbos
 
 function populateListProductChoices(slct1, slct2, slct3, slct4, dp) {
-    var	dt1 = document.getElementById(slct1);
-	var dt2 = document.getElementById(slct2);
-	var dt3 = document.getElementById(slct3);
-	var dt4 = document.getElementById(slct4);
+    var	dt1 = document.getElementById(slct1).value;
+	var dt2 = document.getElementById(slct2).value;
+	var dt3 = document.getElementById(slct3).value;
+	var dt4 = document.getElementById(slct4).value;
 	var s1 = dietType(dt1, dt2, dt3, dt4);
     var s2 = document.getElementById(dp);
 	
