@@ -57,7 +57,7 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, dp) {
 	var dt2 = document.getElementById(slct2).value;
 	var dt3 = document.getElementById(slct3).value;
 	var dt4 = document.getElementById(slct4).value;
-	var s1 = dietType(dt1, dt2, dt3, dt4);
+	var s1 = dietSelect(dt1, dt2, dt3, dt4);
     var s2 = document.getElementById(dp);
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
