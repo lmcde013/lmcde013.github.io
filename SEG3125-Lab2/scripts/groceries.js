@@ -15,17 +15,6 @@ var products = [
 		price: 1.99
 	},
 	{
-		name: "Brocoli - Organic",
-		vegGlutenFreeOrganic: true,
-		vegGlutenFree: true,
-		vegOrganic: true,
-		glutenFreeOrganic: true,
-		vegetarian: true,
-		glutenFree: true,
-		organic: true,
-		price: 3.99
-	},
-	{
 		name: "Bread",
 		vegGlutenFreeOrganic: false,
 		vegGlutenFree: false,
@@ -37,6 +26,94 @@ var products = [
 		price: 2.35
 	},
 	{
+		name: "Carrots",
+		vegGlutenFreeOrganic: false,
+		vegGlutenFree: true,
+		vegOrganic: false,
+		glutenFreeOrganic: false,
+		vegetarian: true,
+		glutenFree: true,
+		organic: false,
+		price: 2.50
+	},
+	{
+		name: "Bread - Gluten Free",
+		vegGlutenFreeOrganic: true,
+		vegGlutenFree: true,
+		vegOrganic: true,
+		glutenFreeOrganic: true,
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 3.75
+	},
+	{
+		name: "Brocoli - Organic",
+		vegGlutenFreeOrganic: true,
+		vegGlutenFree: true,
+		vegOrganic: true,
+		glutenFreeOrganic: true,
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 3.99
+	},
+	{
+		name: "Eggs - Free Range",
+		vegGlutenFreeOrganic: true,
+		vegGlutenFree: true,
+		vegOrganic: true,
+		glutenFreeOrganic: true,
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 5.99
+	},
+	{
+		name: "Avocados (trio)",
+		vegGlutenFreeOrganic: true,
+		vegGlutenFree: true,
+		vegOrganic: true,
+		glutenFreeOrganic: true,
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 6.99
+	},
+	{
+		name: "Mozzarella Cheese",
+		vegGlutenFreeOrganic: true,
+		vegGlutenFree: true,
+		vegOrganic: true,
+		glutenFreeOrganic: true,
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 7.99
+	},
+	{
+		name: "Mixed Berry, Banana, Mango Protein Smoothies - Organic (12 pack - 500 mL each)",
+		vegGlutenFreeOrganic: true,
+		vegGlutenFree: true,
+		vegOrganic: true,
+		glutenFreeOrganic: true,
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 8.67
+	},
+	{
+		name: "Beef - Grass fed",
+		vegGlutenFreeOrganic: false,
+		vegGlutenFree: false,
+		vegOrganic: false,
+		glutenFreeOrganic: true,
+		vegetarian: false,
+		glutenFree: true,
+		organic: true,
+		price: 9.00
+	},
+	{
 		name: "Salmon",
 		vegGlutenFreeOrganic: false,
 		vegGlutenFree: false,
@@ -46,6 +123,17 @@ var products = [
 		glutenFree: true,
 		organic: false,
 		price: 10.00
+	},
+	{
+		name: "Cabbage Rolls - rice & mushroom",
+		vegGlutenFreeOrganic: true,
+		vegGlutenFree: true,
+		vegOrganic: true,
+		glutenFreeOrganic: true,
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 11.25
 	}
 ];
 	
