@@ -78,6 +78,7 @@ p {
   border-top: none;
 }
 
+/* Style Client page checkboxes */
 .checkbox {
 	display: block;
 	padding-bottom: 30px;
@@ -94,6 +95,7 @@ p {
 	font-size: 30px;
 }
 
+/* Style Products page checkboxes */
 .s2 {
 	display: block;
 	padding-bottom: 30px;
