@@ -130,3 +130,10 @@ p {
 	transition: 0.3s;
 }
 
+ps {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	font-size: 16px;
+	font-family: Verdana;
+}
