@@ -9,34 +9,40 @@ body {
 }
 
 /* Style store name */
-h {
+h1 {
 	font-family: verdana;
 	font-size: 60px;
 	text-align: center;
-	padding: 50px;
 	color: #008080; /* Teal */
 }
 
 /* Style tab content headers */
 h3 {
 	font-family: verdana;
-	font-size: 30px;
+	font-size: 35px;
 	text-align: center;
-	/* padding: 14px;*/
+	padding-top: 20px;
 }
 
 /* Style tab content text */
 p {
 	font-family: verdana;
-	font-size: 20px;
+	font-size: 30px;
 	text-align: center;
-	padding: 20px;
+	padding: 12px;
+}
+
+.para {
+	font-family: verdana;
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 10px;
 }
 
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc; /* White */
+  border: 1px solid #ccc; /* Light grey */
   background-color: #FAF0E6; /* Linen */
   padding: 10px;
 }
@@ -72,18 +78,53 @@ p {
   border-top: none;
 }
 
-.checkbox label {
+.checkbox {
+	display: block;
+	padding-bottom: 30px;
+}
+.checkbox input {
+	position: relative;
+	vertical-align: middle;
+	height: 30px;
+	width: 30px;
+}
+
+.checkbox label{
 	font-family: verdana;
 	font-size: 30px;
-	padding: 20px;
+}
+
+.s2 {
+	display: block;
+	padding-bottom: 30px;
+}
+
+.s2 input {
+	height: 30px;
+	width: 30px;
+	vertical-align: middle;
+}
+
+.s2 label {
+	position: relative;
+	font-family: verdana;
+	padding-left: 15px;
+	font-size: 30px;
+}
+
+.s2 labelPrice {
+	position: relative;
+	font-family: verdana;
+	padding-left: 15px;
+	font-size: 30px;
 }
 
 .tabcontent button {
 	background-color: #FAF0E6; /* Linen */
 	font-family: verdana;
-	font-size: 25px;
-	float: center;
+	font-size: 30px;
 	padding: 10px;
 	cursor: pointer;
+	transition: 0.3s;
 }
 

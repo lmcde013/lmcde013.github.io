@@ -34,7 +34,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		price: 2.50
+		price: 2.45
 	},
 	{
 		name: "Bread - Gluten Free",
@@ -92,7 +92,7 @@ var products = [
 		price: 7.99
 	},
 	{
-		name: "Mixed Berry, Banana, Mango Protein Smoothies - Organic (12 pack - 500 mL each)",
+		name: "Mixed Berry Smoothies",
 		vegGlutenFreeOrganic: true,
 		vegGlutenFree: true,
 		vegOrganic: true,
@@ -144,6 +144,7 @@ var products = [
 
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
+
 	for (let i=0; i<prods.length; i+=1) {
 		if ((restriction == "VGO") && (prods[i].vegGlutenFreeOrganic == true)){
 			product_names.push(prods[i].name);
@@ -173,6 +174,17 @@ function restrictListProducts(prods, restriction) {
 	return product_names;
 }
 
+// Calculate the price of items, with received parameter being a list of products
+function getPrice(productsPrice) {
+	var prices = [];
+	for (let i=0; i<products.length; i+=1) {
+		if (productsPrice.indexOf(products[i].name) > -1){
+			prices.push(products[i].price);
+		}
+	}
+	return prices;
+}
+
 // Calculate the total price of items, with received parameter being a list of products
 function getTotalPrice(chosenProducts) {
 	totalPrice = 0;
@@ -181,5 +193,6 @@ function getTotalPrice(chosenProducts) {
 			totalPrice += products[i].price;
 		}
 	}
+	totalPrice = totalPrice.toFixed(2);
 	return totalPrice;
 }

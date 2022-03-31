@@ -10,7 +10,7 @@
 <body>
 <!-- Grocery Store Name -->
 	<div class="body">
-		<h>Meet Your Needs Grocer</h>
+		<h1>Meet Your Needs Grocer</h1>
 	</div>
 	
 <!-- Tab links, each one with an onclick event associated with it -->
@@ -25,7 +25,7 @@
   <h3>Client Information</h3>
   <p>What are your dietary needs?</p>
   <p>Choose a Category: </p>
-  
+  <div class="checkbox">
 	<input type="checkbox" id="diet1" value="Veg">
 	<label for="diet1"> Vegetarian </label><br>
 	<input type="checkbox" id="diet2" value="GF">
@@ -34,20 +34,17 @@
 	<label for="diet3"> Organic </label><br>
 	<input type="checkbox" id="diet4" value="None">
 	<label for="diet4"> No dietary Restrictions </label><br>
-	
-	<p> 
-	
-	</p>
+  </div>
 	
 	<button id="diet" type="button" class="block" onclick="populateListProductChoices('diet1', 'diet2', 'diet3', 'diet4', 'displayProduct')">
-		Display my resitricted grocery items list
+		Display my personalized grocery items
 	</button>
 </div>
 
 <div id="Products" class="tabcontent">
-  <h3>Your targeted products</h3>
-  <p>We preselected products based on your restrictions.</p>
-	 Choose items to buy:
+  <h3>Your personalized products</h3>
+  <p>Your personalized items based on your dietary needs.</p>
+  <p>Choose items to buy:</p>
 	 <div id="displayProduct"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add selected items to cart.

@@ -27,21 +27,21 @@ function dietSelect(d1, d2, d3, d4) {
 		
 	var dietType = "";
 	
-	if (d1 === "Veg" && d2 === "GF" && d3 === "Org") {
+	if ((d1 === true) && (d2 === true) && (d3 === true)) {
 		dietType = "VGO";
-	} else if ((d1 == "Veg") && (d2 == "GF")) {
+	} else if ((d1 == true) && (d2 == true)) {
 		dietType = "VG";
-	} else if ((d1 == "Veg") && (d3 == "Org")) {
+	} else if ((d1 == true) && (d3 == true)) {
 		dietType = "VO";
-	} else if ((d2 == "GF") && (d3 == "Org")) {
+	} else if ((d2 == true) && (d3 == true)) {
 		dietType = "GO";
-	} else if (d1 == "Veg") {
+	} else if (d1 == true) {
 		dietType = "V";
-	} else if (d2 == "GF") {
+	} else if (d2 == true) {
 		dietType = "GF";
-	} else if (d3 == "Org") {
+	} else if (d3 == true) {
 		dietType = "O";
-	} else if (d4 == "None") {
+	} else if (d4 == true) {
 		dietType = "None";
 	} else {
 		dietType = "None";
@@ -53,18 +53,21 @@ function dietSelect(d1, d2, d3, d4) {
 // it makes each product name as the label for the checkboxes
 
 function populateListProductChoices(slct1, slct2, slct3, slct4, dp) {
-    var	dt1 = document.getElementById(slct1).value;
-	var dt2 = document.getElementById(slct2).value;
-	var dt3 = document.getElementById(slct3).value;
-	var dt4 = document.getElementById(slct4).value;
+    var	dt1 = document.getElementById(slct1).checked;
+	var dt2 = document.getElementById(slct2).checked;
+	var dt3 = document.getElementById(slct3).checked;
+	var dt4 = document.getElementById(slct4).checked;
 	var s1 = dietSelect(dt1, dt2, dt3, dt4);
     var s2 = document.getElementById(dp);
 	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";
-		
+
 	// obtain a reduced list of products based on restrictions
     var optionArray = restrictListProducts(products, s1);
+
+	//obtain reduced list of products' prices
+	var optionsPriceArray = getPrice(optionArray);
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
@@ -73,22 +76,36 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, dp) {
 	for (i = 0; i < optionArray.length; i++) {
 			
 		var productName = optionArray[i];
+		var productPrice = optionsPriceArray[i];
+
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
 		checkbox.value = productName;
+		checkbox.valuetwo = productPrice;
 		s2.appendChild(checkbox);
 		
-		// create a label for the checkbox, and also add in HTML DOM
+		// create a label 1 - product name for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
 		label.htmlFor = productName;
 		label.appendChild(document.createTextNode(productName));
 		s2.appendChild(label);
 		
+		// create a label 2 - product price for the checkbox, and also add in HTML DOM
+		var labelPrice = document.createElement('labelPrice')
+		labelPrice.htmlFor = '    $ ' + productPrice;
+		labelPrice.appendChild(document.createTextNode('    $ ' + productPrice));
+		s2.appendChild(labelPrice);
+
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
 	}
+
+	//added generated checkbox list s2 as class for CSS styling
+	s2.classList.add('s2');
+
+	//button switch automatically to Product page
 	document.getElementById("Products").addEventListener('click', openInfo(event, 'Products'));
 }
 	
@@ -110,14 +127,18 @@ function selectedItems(){
 	para.appendChild(document.createElement("br"));
 	for (i = 0; i < ele.length; i++) { 
 		if (ele[i].checked) {
-			para.appendChild(document.createTextNode(ele[i].value));
+			para.appendChild(document.createTextNode(ele[i].value + '    $ ' + ele[i].valuetwo));
 			para.appendChild(document.createElement("br"));
 			chosenProducts.push(ele[i].value);
 		}
 	}
-		
+	
+	c.classList.add('para');
+
 	// add paragraph and total price
 	c.appendChild(para);
 	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
-		
+
+	//button switch automatically to Cart page
+	document.getElementById("Cart").addEventListener('click', openInfo(event, 'Cart'));	
 }
